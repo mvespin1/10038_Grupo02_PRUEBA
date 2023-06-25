@@ -141,3 +141,58 @@ $(document).ready(function(){
     $(this).css("border", "none");
   });
 });
+//-------------------------------------------------------
+//FUNCIONES INICIO
+//--------------------------------------------------------
+
+$(document).ready(function(){
+  $("#inicio1, #inicio2, #inicio3").click(function(){
+    $(this).hide();
+  });
+  $("#mostrarParrafosInicio").click(function() {
+                $("#inicio1, #inicio2, #inicio3").show();
+            });
+});
+
+//--------------------------------------------------------   
+//FUNCIONES SELECTORES
+//--------------------------------------------------------
+$(document).ready(function(){
+  $("#botonselec1").click(function(){
+    $("p").hide();
+  });
+  $("#mostrarParrafosSelectores").click(function() {
+                $("p").show();
+            });
+});
+
+$(document).ready(function(){
+  $("#botonselec2").click(function(){
+    $("#test1, #test2").hide();
+  });
+  $("#mostrarselec1").click(function() {
+                $("#test1, #test2").show();
+            });
+});
+
+$(document).ready(function() {
+  $("#botonselec3").on("click", function() {
+    $("#test1\\.1:even, #test2\\.1:even").css("color", "blue");
+  });
+
+  $("#mostrarselec2").on("click", function() {
+    $("#test1\\.1:even, #test2\\.1:even").css("color", "");
+  });
+});
+
+$(document).ready(function(){
+  $("#botonselec4").click(function(){
+    $(".test3").hide();
+  });
+  $("#mostrarselec3").click(function() {
+                $(".test3").show();
+            });
+});
+
+
+//--------------------------------------------------------
