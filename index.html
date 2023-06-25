@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
 <head>
     <meta charset="utf-8" />
@@ -29,7 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Clarence Taylor</span>
-            <span class="d-none d-lg-block"><img class="img-fluid img-profile   mx-auto mb-2" src="assets/img/logo.png"
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile   mx-auto mb-2" src="./assets/img/logo.png"
                     alt="..." /></span>
             <!-- rounded-circle-->
         </a>
@@ -40,7 +39,8 @@
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#getstarted">jQuery Get Started</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sintaxis">jQuery Syntax</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
@@ -123,7 +123,7 @@
         </section>
         <hr class="m-0" />
         <!-- GET STARTED IVONNE-->
-        <section class="resume-section" id="education">
+        <section class="resume-section" id="getstarted">
             <div class="resume-section-content">
                 <h2 class="mb-5">jQuery Get Started</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -204,7 +204,7 @@
                             <h3>Ejemplo de jQuery con jQuery CDN</h3>
                             <center>
                                 <div id="contenedor">
-                                    <img id="imagen" src="./assets/img/imagen1.jpg"> 
+                                    <img id="imagen" src="./assets/img/imagen1.jpg">
                                 </div>
                                 <br>
                                 <button id="boton" class="btn btn-primary">Cambiar Imagen</button>
@@ -217,25 +217,108 @@
         </section>
         <hr class="m-0" />
         <!-- SYNTAXI IVONNE-->
-        <section class="resume-section" id="education">
+        <section class="resume-section" id="sintaxis">
             <div class="resume-section-content">
-                <h2 class="mb-5">Education</h2>
+                <h2 class="mb-5">Sintaxis de jQuery</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">University of Colorado Boulder</h3>
-                        <div class="subheading mb-3">Bachelor of Science</div>
-                        <div>Computer Science - Web Development Track</div>
-                        <p>GPA: 3.23</p>
+                        <p>La sintaxis de jQuery sigue una estructura común para seleccionar elementos del DOM (Document
+                            Object Model) y manipularlos. <br>
+
+                            <b>La sintaxis básica es: $( selector ). acción ()</b>
+
+                        <ul>
+                            <li>Un signo <b>$</b> para definir/acceder a jQuery</li>
+                            <li>Un <b>( selector )</b> para "consultar (o encontrar)" elementos HTML</li>
+                            <li>Una acción <b>jQuery ()</b> que se realizará en los elementos</li>
+                        </ul>
+                        <center><img src="./assets/img/Syntax.JPG" alt="">Syntax</center>
+                        </p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
                 </div>
                 <div class="d-flex flex-column flex-md-row justify-content-between">
                     <div class="flex-grow-1">
-                        <h3 class="mb-0">James Buchanan High School</h3>
-                        <div class="subheading mb-3">Technology Magnet Program</div>
-                        <p>GPA: 3.56</p>
+                        <div class="subheading mb-3">Ejemplos</div>
+                        <p>
+                            <code>$(this).hide()</code>- oculta el elemento actual. <br>
+
+                            <code>$("p").hide()</code>- oculta todos los elementos. <br>
+
+                            <code>$(".test").hide()</code>- oculta todos los elementos con class="test". <br>
+
+                            <code>$("#test").hide()</code>- oculta el elemento con id="test".
+                        </p>
                     </div>
-                    <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">El evento de Document Ready</h3>
+                        <p>
+                            El evento "Document Ready" en jQuery se utiliza para ejecutar código cuando el documento
+                            HTML ha sido completamente cargado y parseado. Este evento se dispara cuando todos los
+                            elementos del DOM están disponibles para manipular. <br>
+                            Los métodos de jQuery en nuestros ejemplos están dentro de un evento de documento listo:
+                        </p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded">
+                                $(document).<span class="jspropertycolor" style="color:black">ready</span>(<span class="jskeywordcolor" style="color:mediumblue">function</span>(){<span class="jsnumbercolor" style="color:red">
+                                </span>&nbsp; <i>
+                                <span class="commentcolor" style="color:green">// jQuery methods go here...</span></i><br><span class="jsnumbercolor" style="color:red">
+                                </span>});
+                            </pre>
+                        </div>
+                        <p>
+                            Estos son algunos ejemplos de acciones que pueden fallar si los métodos se ejecutan antes de
+                            que el documento esté completamente cargado:
+                            <br>
+                        <ul>
+                            <li>Intentando ocultar un elemento que aún no se ha creado</li>
+                            <li>Intentando obtener el tamaño de una imagen que aún no está cargada</li>
+                        </ul>
+                        </p>
+                        <div>
+                            <h3>Ejemplo:</h3>
+                            <div class="subheading mb-3">Cambio de tema de color dinámico:</div>
+                            <div class="docs-code-block">
+                                <pre class="shadow-lg rounded"><code class="json hljs">
+                                    $(document).ready(function() {
+                                    var changeColor = true;
+                                    var defaultColor = $('body').css('background-color');
+                                
+                                    function randomColor() {
+                                      return '#' + Math.floor(Math.random() * 16777215).toString(16);
+                                    }
+                                
+                                    function changeBackgroundColor() {
+                                      if (changeColor) {
+                                        var color = randomColor();
+                                        $('body').css('background-color', color);
+                                      }
+                                    }
+                                
+                                    $('.theme-button').click(function() {
+                                      changeBackgroundColor();
+                                    });
+                                
+                                    $('.disable-button').click(function() {
+                                      changeColor = false;
+                                    });
+                                
+                                    $('.restore-button').click(function() {
+                                      changeColor = true;
+                                      $('body').css('background-color', defaultColor);
+                                    });
+                                  });</code></pre>
+                              </div>
+                            <center>
+                                <button class="btn btn-info theme-button">Cambiar Tema</button>
+                                <button class="btn btn-danger restore-button">Restaurar Color Original</button>
+
+                            </center>
+                        </div>
+                    </div>
+                    <!--<div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>-->
                 </div>
             </div>
         </section>
@@ -277,47 +360,61 @@
                         <span class="fa-li"><i class="fas fa-check"></i></span>
                         Agile Development & Scrum
                     </li>
-=======
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Resume - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link rel="stylesheet" href="./css/main.css">
-        <script src="./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <link href="css/styles.css" rel="stylesheet" />
 
-        <!-- JS -->
-        <script src="../js/funciones.js"></script>
+                    <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+                        <meta name="description" content="" />
+                        <meta name="author" content="" />
+                        <title>Resume - Start Bootstrap Theme</title>
+                        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+                        <!-- Font Awesome icons (free version)-->
+                        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+                            crossorigin="anonymous"></script>
+                        <!-- Google fonts-->
+                        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700"
+                            rel="stylesheet" type="text/css" />
+                        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet"
+                            type="text/css" />
+                        <!-- Core theme CSS (includes Bootstrap)-->
+                        <link rel="stylesheet" href="./css/main.css">
+                        <script src="./js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+                        <link href="css/styles.css" rel="stylesheet" />
 
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Clarence Taylor</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
->>>>>>> 8241c8eccce6f854782fedf9dd9c10b5d81771f0
-                </ul>
-            </div>
+                        <!-- JS -->
+                        <script src="../js/funciones.js"></script>
+
+                    </head>
+
+                    <body id="page-top">
+                        <!-- Navigation-->
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+                            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                                <span class="d-block d-lg-none">Clarence Taylor</span>
+                                <span class="d-none d-lg-block"><img
+                                        class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                                        src="assets/img/profile.jpg" alt="..." /></span>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                                aria-expanded="false" aria-label="Toggle navigation"><span
+                                    class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse" id="navbarResponsive">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                                            href="#experience">Experience</a></li>
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                                            href="#education">Education</a></li>
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                                            href="#interests">Interests</a></li>
+                                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
+                                    </li>
+                                </ul>
+                            </div>
         </section>
         <hr class="m-0" />
         <!--Interests-->
@@ -388,13 +485,13 @@
         <script src="./js/vendor/bootstrap.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-<<<<<<< HEAD
-</body>
+        <<<<<<< HEAD </body>
 
 </html>
 =======
-        <script src="./js/main.js"></script>
-        <script src="./js/funciones.js"></script>
-    </body>
+<script src="./js/main.js"></script>
+<script src="./js/funciones.js"></script>
+</body>
+
 </html>
 >>>>>>> 8241c8eccce6f854782fedf9dd9c10b5d81771f0
