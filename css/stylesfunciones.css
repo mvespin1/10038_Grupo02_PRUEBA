@@ -1,7 +1,5 @@
-<!--EJEMPLO DE GET STARTED CON MICROSOFT-->
-h1{
-    color: red;
-}
+/*<!--EJEMPLO DE GET STARTED CON MICROSOFT-->*/
+
   
 #contenedor {
     width: 620px;
@@ -19,7 +17,7 @@ h1{
     object-fit: contain;
 }
 
-<!--EJEMPLO DE SYNTAX-->
+/*<!--EJEMPLO DE SYNTAX-->*/
 body {
     transition: background-color 0.5s;
   }
@@ -33,3 +31,37 @@ body {
   .disable-button {
     margin-left: 10px;
   }
+/*INICIO */
+
+.recuadroinicio{
+        background-color: #333333;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #666666;
+        box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+      }
+
+/*<!-------------------------------------------->*/
+/*<1-- Selectores --> */
+.imgselectores{
+    width: 500px;
+    height: auto;
+}
+.notasselec{
+    background-color: #f2f2f2; 
+    padding: 10px; 
+    border: 1px solid #cccccc; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.notasselec h4{
+    color: #999999;
+}
+.notasselec p{
+    color: #666666;
+}
+.recuadroselec {
+        background-color: #f8f9fa;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+/*<!-------------------------------------------->*/
