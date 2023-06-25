@@ -39,3 +39,105 @@ $(document).ready(function() {
     });
   });
 
+//EVENTOS JQUERY
+
+//EJEMPLO 1 
+$(document).ready(function(){
+  $("#boton1").click(function(){
+    $(this).addClass("rojo");
+  });
+
+  $("#boton2").click(function(){
+    $(this).addClass("azul");
+  });
+
+  $("#boton3").click(function(){
+    $(this).addClass("verde");
+  });
+});
+
+//EJEMPLO 2
+$(document).ready(function(){
+  $("#boton4").dblclick(function(){
+    $(this).addClass("verde");
+  });
+
+  $("#boton5").dblclick(function(){
+    $(this).addClass("rojo");
+  });
+
+  $("#boton6").dblclick(function(){
+    $(this).addClass("azul");
+  });
+});
+
+//EJEMPLO 3
+$(document).ready(function(){
+  $("#elemento").mouseenter(function(){
+      $(this).addClass("resaltado");
+  });
+});
+
+//EJEMPLO 4
+$(document).ready(function(){                     
+  $("#elemento2").mouseleave(function(){
+      $(this).addClass("resaltado2");
+  });
+});
+
+//EJEMPLO 5
+$(document).ready(function(){
+  $("#elemento3").mousedown(function(){
+      $(this).addClass("resaltado3");
+  });
+                            
+  $("#elemento3").mouseup(function(){
+      $(this).removeClass("resaltado3");
+  });
+});
+
+//EJEMPLO 6
+$(document).ready(function(){
+  $("#elemento4").mouseup(function(){
+    $(this).addClass("resaltado4");
+  });
+});
+
+//EJEMPLO 7
+$(document).ready(function(){
+  $("#elemento5").hover(function(){
+    $(this).addClass("resaltado5");
+  }, function(){
+    $(this).removeClass("resaltado5");
+  });
+});
+
+//EJEMPLO 8
+$(document).ready(function(){
+  $("#input1, #input2").focus(function(){
+    $(this).addClass("resaltado6");
+  });
+
+});
+
+//EJEMPLO 9
+$(document).ready(function(){
+  $("#input3, #input4").blur(function(){
+      $(this).addClass("resaltado7");
+  });                       
+});
+
+//EJEMPLO 10
+$(document).ready(function(){
+  $("#p1, #p2, #p3").on("click", function(){
+    $(this).addClass("resaltado8");
+    $(this).css("background-color", "yellow");
+    $(this).css("border", "2px solid black");
+  });
+
+  $("#p1, #p2, #p3").on("mouseleave", function(){
+    $(this).removeClass("resaltado8");
+    $(this).css("background-color", "white");
+    $(this).css("border", "none");
+  });
+});

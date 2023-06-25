@@ -1,0 +1,83 @@
+.rojo {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+  }
+
+  .azul {
+    background-color: blue;
+    color: white;
+    font-size: 24px;
+  }
+
+  .verde {
+    background-color: green;
+    color: white;
+    font-size: 18px;
+  }
+
+  .morado {
+    background-color: #800080;
+    color: #FFFFFF;
+  }
+
+  .naranja {
+    background-color: #FFA500;
+    color: #000000;
+  }
+
+  .amarillo {
+    background-color: #FFFF00;
+    color: #000000;
+  }
+
+  .resaltado {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+  }
+  .resaltado2 {
+    background-color: rgb(0, 242, 255);
+    color: black;
+    font-weight: bold;
+  }
+
+  .resaltado3 {
+    background-color: rgb(59, 201, 3);
+    color: black;
+    font-weight: bold;
+  }
+  .resaltado4 {
+    background-color: rgb(251, 0, 255);
+    color: black;
+    font-weight: bold;
+  }
+
+  .resaltado5 {
+    background-color: rgb(255, 34, 0);
+    color: black;
+    font-weight: bold;
+  }
+
+  .resaltado6 {
+    background-color: lightblue;
+    color: white;
+    font-weight: bold;
+    border: 2px solid blue;
+    padding: 8px;
+  }
+
+  .resaltado7 {
+    background-color: rgb(179, 224, 0);
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(255, 106, 0);
+    padding: 8px;
+  }
+
+  .resaltado8 {
+    color: red;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }

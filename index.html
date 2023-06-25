@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
     <!-- EJEMPLOS CND -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/funciones.js"></script>
@@ -37,12 +38,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intro">INTRODUCCIÓN A JQUERY</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#getstarted">jQuery Get Started</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sintaxis">jQuery Syntax</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#events">EVENTOS JQUERY</a></li>
             </ul>
         </div>
     </nav>
@@ -70,6 +69,53 @@
                 </div>
             </div>
         </section>
+
+        <!-- Intro MARCO -->
+        <section class="resume-section" id="intro">
+            <div class="resume-section-content">
+                <h2 class="mb-5">INTRODUCCIÓN A JQUERY</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">ANTES DE COMENZAR</h3><br>
+                        <p>Antes de adentrarnos en el estudio de jQuery, es fundamental reconocer la importancia de poseer habilidades y conocimientos previos en áreas fundamentales como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b>. Estos conocimientos proporcionarán una base sólida para comprender y aprovechar al máximo las capacidades de jQuery.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">¿QUÉ ES JQUERY?</h3><br>
+                        <p>jQuery corresponde a una biblioteca de <b>JavaScript</b> "liviana" y de código abierto que se utiliza para simplificar y agilizar el desarrollo de aplicaciones web. Su lema característico es <b>"escribe menos, haz más"</b>.</p>
+                        <p>Su principal objetivo es el permitir a los desarrolladores lograr resultados eficientes y rápidos con menos líneas de código, es decir que, tiene el propósito de hacer mucho más fácil el uso de JavaScript en su sitio web.</p>
+                        <p>Además, JQuery se caracteriza por simplificar tareas comunes en <b>JavaScript</b> mediante métodos que se pueden invocar con una sola línea de código, reduciendo la cantidad de código necesaria.</p>
+                        <p>Entre las características más importantes de la biblioteca JQuery se tienen: </p>
+                        <ul>
+                            <li><b>Manipulación de HTML/DOM:</b> jQuery facilita la manipulación de elementos HTML y la navegación en el DOM (Document Object Model). Permite seleccionar, modificar y agregar elementos de forma sencilla.</li>
+                            <li><b>Manipulación de CSS:</b> Con jQuery, es posible aplicar y modificar estilos CSS de manera dinámica. Esto incluye cambios en propiedades como colores, tamaños, fuentes, posiciones y más.</li>
+                            <li><b>Métodos de eventos HTML:</b> jQuery simplifica la asignación de eventos a elementos HTML, como clics, desplazamientos, ingresos de teclado, entre otros. Permite una gestión eficiente de la interactividad en las páginas web.</li>
+                            <li><b>Efectos y animaciones:</b> La biblioteca ofrece una amplia variedad de efectos y animaciones predefinidos, como desvanecimientos, deslizamientos, cambios de tamaño y movimientos. Estos efectos se aplican con facilidad a los elementos de la página.</li>
+                            <li><b>AJAX:</b> jQuery simplifica el uso de la tecnología AJAX para realizar peticiones asíncronas al servidor y actualizar partes específicas de la página web sin tener que recargarla por completo. Esto mejora la experiencia del usuario al proporcionar una interacción más rápida y dinámica.</li>
+                            <li><b>Utilidades:</b> jQuery incluye una serie de utilidades prácticas que facilitan tareas comunes, como la manipulación de arrays, la gestión de objetos JSON, el manejo de cookies y mucho más. Estas utilidades agilizan el desarrollo y mejoran la eficiencia del código.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">¿POR QUÉ UTILIZAR JQUERY?</h3><br>
+                        <p>jQuery destaca como una de las bibliotecas de JavaScript más populares y versátiles, ofreciendo una amplia gama de funcionalidades. Es ampliamente adoptada por numerosas compañías líderes en la web, algunas de las cuales incluyen:</p>
+                        <ul>
+                            <li>Google</li>
+                            <li>Microsoft</li>
+                            <li>IBM</li>
+                            <li>Netflix</li>
+                        </ul>
+                        <p>Estas empresas confían en jQuery para impulsar sus aplicaciones web y ofrecer experiencias interactivas y dinámicas a sus usuarios. </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
         <hr class="m-0" />
         <!-- Experience-->
         <section class="resume-section" id="experience">
@@ -322,106 +368,329 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
+        
+        <!-- Eventos MARCO -->
+        <section class="resume-section" id="events">
             <div class="resume-section-content">
-                <h2 class="mb-5">Skills</h2>
-                <div class="subheading mb-3">Programming Languages & Tools</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                </ul>
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Mobile-First, Responsive Design
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Browser Testing & Debugging
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Cross Functional Teams
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-check"></i></span>
-                        Agile Development & Scrum
-                    </li>
-                </ul>
+                <h2 class="mb-5">INTRODUCCIÓN A JQUERY</h2>
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">¿QUÉ SON LOS EVENTOS?</h3><br>
+                        <p>Los eventos engloban todas las distintas interacciones de los visitantes que una página web puede responder. Cada evento representa un momento preciso en el que ocurre algo significativo. Algunos ejemplos comunes de eventos son: <b>Movimiento del mouse sobre un elemento</b>, <b>Clic en un elemento específico</b> o <b>Selección de un botón de radio</b>.</p>
+                        <p>El término "incendio" o "desencadenamiento" se utiliza a menudo en relación con los eventos. Por ejemplo, se puede decir que el evento de pulsación de tecla se desencadena en el preciso instante en que una tecla es presionada. Esta terminología resalta el momento en que el evento es activado y se puede tomar una acción correspondiente.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="subheading mb-3">EVENTOS COMUNES DEL DOM.</h3>
+                        <div class="container">
+                            <table class="table table-bordered">
+                              <thead>
+                                <tr>
+                                  <th>Eventos del Mouse</th>
+                                  <th>Eventos del Teclado</th>
+                                  <th>Eventos de Formulario</th>
+                                  <th>Eventos del Documento/Ventana</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>click / clic</td>
+                                  <td>keypress</td>
+                                  <td>submit / enviar</td>
+                                  <td>load / cargar</td>
+                                </tr>
+                                <tr>
+                                  <td>dblclick / doble clic</td>
+                                  <td>keydown</td>
+                                  <td>change / cambio</td>
+                                  <td>resize / redimensionar</td>
+                                </tr>
+                                <tr>
+                                  <td>mouseenter / entrar</td>
+                                  <td>keyup</td>
+                                  <td>focus / enfoque</td>
+                                  <td>scroll / desplazamiento</td>
+                                </tr>
+                                <tr>
+                                  <td>mouseleave / salir</td>
+                                  <td></td>
+                                  <td>blur / desenfoque</td>
+                                  <td>unload / descargar</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">SINTAXIS DE JQUERY PARA LOS MÉTODOS DE EVENTOS.</h3><br>
+                        <p>En jQuery, la mayoría de los eventos del DOM tienen un método equivalente en jQuery.</p>
+                        <p>Para asignar un evento de clic a todos los párrafos de una página, puedes hacer lo siguiente:</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $("p").click();
+                            </code></pre>
+                          </div>
+                        <p>El siguiente paso es definir qué debe ocurrir cuando se activa el evento. Debes pasar una función al evento:</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $("p").click(function(){
+        // ¡Aquí va la acción!
+    });
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Métodos de Eventos de jQuery comúnmente utilizados.</h3><br>
+                        <h3 class="subheading mb-3"><b>$(document).ready()</b></h3>
+                        <p>El método <b>$(document).ready()</b> nos permite ejecutar una función cuando el documento se haya cargado completamente. </p>
+                        <br>
+                        <h3 class="subheading mb-3"><b>click()</b></h3>
+                        <p>El método <b>click()</b> adjunta una función controladora de eventos a un elemento HTML, la función se ejecuta cuando el usuario hace clic en el elemento HTML.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>CAMBIO DE ESTILO DE BOTONES CON EL MÉTODO <b>"click()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#boton1").click(function(){
+            $(this).addClass("rojo");
+        });
+                                  
+        $("#boton2").click(function(){
+            $(this).addClass("azul");
+        });
+                                  
+        $("#boton3").click(function(){
+            $(this).addClass("verde");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <button id="boton1">Botón 1</button>
+                        <button id="boton2">Botón 2</button>
+                        <button id="boton3">Botón 3</button>
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>dblclick()</b></h3>
+                        <p>El método <b>dblclick()</b> adjunta una función controladora de eventos a un elemento HTML.La función se ejecuta cuando el usuario realiza doble clic en el elemento HTML.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>CAMBIO DE ESTILO DE BOTONES AL DAR "DOBLE CLIC" CON EL MÉTODO <b>"click()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#boton4").dblclick(function(){
+            $(this).addClass("verde");
+        });
+                                  
+        $("#boton5").dblclick(function(){
+            $(this).addClass("rojo");
+        });
+                                  
+        $("#boton6").dblclick(function(){
+            $(this).addClass("azul");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <button id="boton4">Botón 1</button>
+                        <button id="boton5">Botón 2</button>
+                        <button id="boton6">Botón 3</button>
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>mouseenter()</b></h3>
+                        <p>El método <b>mouseenter()</b> adjunta una función controladora de eventos a un elemento HTML. La función se ejecuta cuando el puntero del ratón entra en el elemento HTML.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>PASAR POR EL PÁRRAFO PARA VER EFECTOS CON EL MÉTODO <b>"mouseenter()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#elemento").mouseenter(function(){
+            $(this).addClass("resaltado");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <p id="elemento">Pasa el mouse por encima de este párrafo.</p>
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>mouseleave()</b></h3>
+                        <p>El método <b>mouseleave()</b> adjunta una función controladora de eventos a un elemento HTML. La función se ejecuta cuando el puntero del ratón abandona el elemento HTML.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>PASAR EL MOUSE POR EL PÁRRAFO CON EL MÉTODO <b>"mouseenter()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){                     
+        $("#elemento2").mouseleave(function(){
+            $(this).removeClass("resaltado2");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <p id="elemento2">Pasar por este párrafo.</p>
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>mousedown()</b></h3>
+                        <p>El método <b>mousedown()</b> adjunta una función controladora de eventos a un elemento HTML. La función se ejecuta cuando se presiona el botón izquierdo, medio o derecho del ratón mientras el ratón está sobre el elemento HTML.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>MANTENER PRESIONADO EL PÁRRAFO CON EL MÉTODO <b>"mousedown()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#elemento3").mousedown(function(){
+            $(this).addClass("resaltado3");
+        });
+                                  
+        $("#elemento3").mouseup(function(){
+            $(this).removeClass("resaltado3");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <p id="elemento3">Haz clic y mantén presionado este párrafo.</p>
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>mouseup()</b></h3>
+                        <p>El método <b>mouseup()</b> adjunta una función controladora de eventos a un elemento HTML. La función se ejecuta cuando se suelta el botón izquierdo, medio o derecho del ratón mientras el ratón está sobre el elemento HTML.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>HACER CLIC Y SOLTAR EL PÁRRAFO CON EL MÉTODO <b>"mouseup()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#elemento4").mouseup(function(){
+            $(this).addClass("resaltado4");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <p id="elemento4">Haz clic y suelta en este párrafo.</p>
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>hover()</b></h3>
+                        <p>El método <b>hover()</b> toma dos funciones y es una combinación de los métodos <b>mouseenter()</b> y <b>mouseleave()</b>. La primera función se ejecuta cuando el ratón entra en el elemento HTML y la segunda función se ejecuta cuando el ratón sale del elemento HTML.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>PASAR POR EL PÁRRAFO CON EL MÉTODO <b>"hover()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#elemento5").hover(function(){
+            $(this).addClass("resaltado5");
+        }, function(){
+            $(this).removeClass("resaltado5");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <p id="elemento5">Pasa el mouse por encima de este párrafo.</p>
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>focus()</b></h3>
+                        <p>El método <b>focus()</b> adjunta una función controladora de eventos a un campo de formulario HTML. La función se ejecuta cuando el campo de formulario recibe el foco.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>HACER CLIC EN LOS "INPUT" CON EL MÉTODO <b>"focus()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#input1, #input2").focus(function(){
+            $(this).addClass("resaltado6");
+        });
+                                  
+    });
+                            </code></pre>
+                        </div>
+
+                        <input type="text" id="input1" placeholder="Haz clic para enfocar" style="width: 200px; padding: 5px;" />
+                        <input type="text" id="input2" placeholder="Haz clic para enfocar" style="width: 200px; padding: 5px;" />
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>blur()</b></h3>
+                        <p>El método <b>blur()</b> adjunta una función controladora de eventos a un campo de formulario HTML. La función se ejecuta cuando el campo de formulario pierde el foco.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>EJEMPLO MÉTODO <b>"blur()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#input3, #input4").blur(function(){
+            $(this).addClass("resaltado7");
+        });
+                                  
+    });
+                            </code></pre>
+                        </div>
+
+                        <input type="text" id="input3" placeholder="Haz clic aquí y afuera." style="width: 200px; padding: 5px;" />
+                        <input type="text" id="input4" placeholder="Haz clic aquí y afuera." style="width: 200px; padding: 5px;" />
+
+                        <br><br><br>
+
+                        <h3 class="subheading mb-3"><b>El método on()</b></h3>
+                        <p>El <b>método on()</b> adjunta uno o más controladores de eventos a los elementos seleccionados del HTML DOM.</p>
+                        <h3 class="subheading mb-3">EJEMPLO:</b></h3>
+
+                        <p>EJEMPLO MÉTODO <b>"on()"</b>.</p>
+                        <div class="docs-code-block">
+                            <pre class="shadow-lg rounded"><code class="JavaScript hljs">
+    $(document).ready(function(){
+        $("#p1, #p2, #p3").on("click", function(){
+            $(this).addClass("resaltado8");
+            $(this).css("background-color", "yellow");
+            $(this).css("border", "2px solid black");
+        });
+                                  
+        $("#p1, #p2, #p3").on("mouseleave", function(){
+            $(this).removeClass("resaltado8");
+            $(this).css("background-color", "white");
+            $(this).css("border", "none");
+        });
+    });
+                            </code></pre>
+                        </div>
+
+                        <p id="p1">Haz clic en este párrafo.</p>
+                        <p id="p2">Otro párrafo para hacer clic.</p>
+                        <p id="p3">Incluso puedes hacer clic en este párrafo.</p>
+
+                    </div>
+                </div>
+                
             </div>
         </section>
-        <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-            </div>
-        </section>
-        <hr class="m-0" />
-        <!-- Awards-->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Awards & Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Google Analytics Certified Developer
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        Mobile Web Specialist - Google Certification
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2
-                        <sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        1
-                        <sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006
-                    </li>
-                    <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        3
-                        <sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005
-                    </li>
-                </ul>
-            </div>
-        </section>
+
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="./js/funciones.js"></script>
 </body>
 </html>
