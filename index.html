@@ -37,30 +37,39 @@
                 class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#inicio">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#intro">INTRODUCCIÓN A JQUERY</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#getstarted">jQuery Get Started</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#sintaxis">jQuery Syntax</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Selectores">Selectores JQuery</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#events">EVENTOS JQUERY</a></li>
             </ul>
         </div>
     </nav>
     <!-- Page Content-->
     <div class="container-fluid p-0">
-        <!-- About-->
-        <section class="resume-section" id="about">
+<!-- INICIO-->
+        <section class="resume-section" id="inicio">
             <div class="resume-section-content">
                 <h1 class="mb-0">
-                    Clarence
-                    <span class="text-primary">Taylor</span>
+                    Tutorial de 
+                    <span class="text-primary">JQuery</span>
                 </h1>
                 <div class="subheading mb-5">
-                    3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                    <a href="mailto:name@email.com">name@email.com</a>
+                    Aprende qué es y cómo puedes usarlo·
+                   <!-- <a href="mailto:name@email.com"></a> -->
                 </div>
-                <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for
-                    high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to
-                    further the overall value proposition.</p>
+                <p class="lead mb-5">Tu primer script jQuery. Cómo instalar jQuery en la página web y los pasos para realizar un primer ejemplo, con explicaciones básicas y detalladas sobre la los fundamentos de uso de la librería.<br><br>
+                Ejemplos en cada capítulo
+                Podras leer y probar los ejemplos para facilitar el aprendizaje de jQuery como el siguiente ejemplo, da clic a cada una de las frasese:
+                </p>
+                <div class="recuadroinicio"> 
+                    <p id="inicio1">Dame un clic para desaparecer.</p>
+                    <p id="inicio2">A mi tambien!</p>
+                    <p id="inicio3">Tambien a mi!</p>
+                </div>
+                 <button id="mostrarParrafosInicio" class="btn btn-primary">Mostrar párrafos</button>
+                 <p class="lead mb-5"></p>
                 <div class="social-icons">
                     <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
                     <a class="social-icon" href="#!"><i class="fab fa-github"></i></a>
@@ -69,6 +78,8 @@
                 </div>
             </div>
         </section>
+<!-- FIN INICIO -->
+        <hr class="m-0" />
 
         <!-- Intro MARCO -->
         <section class="resume-section" id="intro">
@@ -368,7 +379,168 @@
             </div>
         </section>
         <hr class="m-0" />
-        
+<!-- SELECTORES JQUERY -->
+        <section class="resume-section" id="Selectores">
+            <div class="resume-section-content">
+                <h2 class="mb-5">Selectores JQuery</h2>
+                <div class="subheading mb-5">
+                    Los selectores jQuery son una de las partes más importantes de la biblioteca jQuery.
+                </div>
+                <center><img src="./assets/img/jqueryselector.JPG" alt="" class="imgselectores"></center>
+                <p>Como la propia palabra indica, los selectores son un mecanismo disponible en jQuery para seleccionar determinados elementos de la página. El selector no es más que una cadena de caracteres, creada bajo unas normas que veremos a continuación, con la que podemos referirnos a cualquiera o cualesquiera de los elementos (etiquetas) que hay en una página.</p>
+                <div class="notasselec">
+                    <h4><span class="callout-icon-holder me-1"><i class="fas fa-info-circle"></i></span>Nota</h4>
+                    <p>Actualizado: Ahora que existen otras librerías más modernas como React o Vue cabe comentar que no usan selectores porque no están pensadas para acceder a los elementos de la página de manera explicita, para manipular el DOM como hace jQuery. En lugar de ello usan templates reactivos y programación declarativa, que mejora bastante la experiencia del desarrollador.</p>
+                </div><br>
+                <h3 class="mb-0">¿Qué son los selectores?</h3>
+                <p>Los selectores son cadenas de texto que permiten seleccionar elementos en la página. Con un selector podemos acceder a un elemento único o a una colección de elementos determinados. Los selectores en realidad vienen del lenguaje CSS, por lo que para construirlos se usa la misma <a href="#sintaxis">sintaxis</a> de selectores de CSS.<br>
+                Los selectores de jQuery le permiten seleccionar y manipular elementos HTML.
+                <br>
+                Los selectores de jQuery se utilizan para "encontrar" (o seleccionar) elementos HTML en función de su nombre, identificación, clases, tipos, atributos, valores de atributos y mucho más. Se basa en los selectores de CSS existentes y, además, tiene algunos selectores personalizados propios.
+                <br>
+                Todos los selectores en jQuery comienzan con el signo de dólar y paréntesis: $().
+                </p><br>
+                <h3 class="mb-0">El selector de elementos</h3><br>
+                <p>
+                El selector de elementos jQuery selecciona elementos en función del nombre del elemento.<br>
+
+                Puede seleccionar todos &lt;<strong>p</strong>&gt; los elementos en una página como se muestra en el siguiente codigo y cuando un usuario hace clic en un botón "Desvanecer Parrafos", todos &lt;<strong>p</strong>&gt; los elementos se ocultarán:
+                </p>
+                <div class="recuadroselec">
+                <pre class="shadow-lg rounded">
+                  <code>
+                $(document).ready(function(){
+                  $("#botonselec1").click(function(){
+                    $("p").hide();
+                  });
+                  $("#mostrarParrafosSelectores").click(function() {
+                    $("p").show();
+                  });
+                });
+                  </code>
+                </pre>
+                </div>
+                <button id="botonselec1" class="btn btn-primary">Desvanecer Parrafos</button>
+                <button id="mostrarParrafosSelectores" class="btn btn-primary">Re-aparecer Parrafos</button>
+                <br><br>
+                <h3 class="mb-0">El selector de #id</h3><br>
+                <p>
+                El selector jQuery usa el atributo id de una etiqueta HTML para encontrar el elemento específico.#id
+                <br>
+                Una identificación debe ser única dentro de una página, por lo que debe usar el selector #id cuando desee encontrar un elemento único y único.
+                <br>
+                Para encontrar un elemento con una identificación específica, escriba un carácter hash, seguido de la identificación del elemento HTML:
+                </p>
+                <div class="recuadroselec">
+                <pre class="shadow-lg rounded">
+                  <code>
+                $("#test")
+                  </code>
+                </pre>
+                </div>
+                <p>Cuando el usuario de clic en el boton Ocultar Frases, se ocultaran las frases con el #test1 y #test2:</p>
+                <div class="recuadroselec">
+               <pre class="shadow-lg rounded">
+                  <code>
+                    $(document).ready(function(){
+                      $("#botonselec2").click(function(){
+                        $("#test1, #test2").hide();
+                      });
+                      $("#mostrarselec1").click(function() {
+                        $("#test1, #test2").show();
+                      });
+                    });
+                    &lt;p&gt;Yo soy un párrafo normal 1&lt;/p&gt;
+                    &lt;p id="test1"&gt;Yo soy un párrafo normal con id&lt;/p&gt;
+                    &lt;p&gt;Yo soy un párrafo normal 2&lt;/p&gt;
+                    &lt;p id="test2"&gt;Yo también tengo id&lt;/p&gt;
+                  </code>
+                </pre>
+
+                </div>
+                <div class="recuadroinicio">
+                <p>Yo soy un parrafo normal 1</p>
+                <p id="test1">Yo soy un parrafo normal con id</p>
+                <p>Yo soy un parrafo normal 2</p>
+                <p id="test2">Yo tambien tengo id</p>
+                </div>
+                <button id="botonselec2" class="btn btn-primary">Ocultar Frases</button>
+                <button id="mostrarselec1" class="btn btn-primary">Re-aparecer Frases</button>
+                <br><br>
+                <p>Cuando el usuario de clic en el boton Pintar Frases, se cambia el color de las frases con el #test1 y #test2:</p>
+                <div class="recuadroselec">
+               <pre class="shadow-lg rounded">
+                  <code>
+                    $(document).ready(function() {
+                      $("#botonselec3").on("click", function() {
+                        $("#test1\\.1:even, #test2\\.1:even").css("color", "blue");
+                      });
+                    
+                      $("#mostrarselec2").on("click", function() {
+                        $("#test1\\.1:even, #test2\\.1:even").css("color", "");
+                      });
+                    });
+                    &lt;p&gt;Yo soy un párrafo normal 1&lt;/p&gt;
+                    &lt;p id="test1.1"&gt;Yo soy un párrafo normal con id&lt;/p&gt;
+                    &lt;p&gt;Yo soy un párrafo normal 2&lt;/p&gt;
+                    &lt;p id="test2.1"&gt;Yo también tengo id&lt;/p&gt;
+                  </code>
+                </pre>
+
+                </div>
+                <div class="recuadroinicio">
+                <p>Yo soy un parrafo normal 1</p>
+                <p id="test1.1">Yo soy un parrafo normal con id</p>
+                <p>Yo soy un parrafo normal 2</p>
+                <p id="test2.1">Yo tambien tengo id</p>
+                </div>
+                <button id="botonselec3" class="btn btn-primary">Pintar Frases</button>
+                <button id="mostrarselec2" class="btn btn-primary">Volver Frases</button>
+                <br><br>
+
+                <h3 class="mb-0">El selector .class</h3><br>
+                <p>
+                El selector jQuery .class encuentra elementos con una clase específica.
+                <br>
+                Para encontrar elementos con una clase específica, escriba un carácter de punto, seguido del nombre de la clase:
+                </p>
+                <div class="recuadroselec">
+                <pre class="shadow-lg rounded">
+                  <code>
+                $(".test")
+                  </code>
+                </pre>
+                </div>
+                <p>Cuando el usuario de clic en el boton Desvanecer Frase, se oculta la frase con el class="test3":</p>
+                <div class="recuadroselec">
+               <pre class="shadow-lg rounded">
+                  <code>
+                    $(document).ready(function(){
+                      $("#botonselec4").click(function(){
+                        $(".test3").hide();
+                      });
+                      $("#mostrarselec3").click(function() {
+                                    $(".test3").show();
+                                });
+                    });
+                    &lt;p&gt;Yo soy un parrafo normal que no le va a pasar nada&lt;/p&gt;
+                    &lt;p class="test3"&gt;Yo soy un parrafo que tiene la clase=".test3"&lt;/p&gt;
+                  </code>
+                </pre>
+
+                </div>
+                <div class="recuadroinicio">
+                <p>Yo soy un parrafo normal que no le va a pasar nada</p>
+                <p class="test3">Yo soy un parrafo que tiene la clase=".test3"</p>
+                </div>
+                <button id="botonselec4" class="btn btn-primary">Desvanecer Frase</button>
+                <button id="mostrarselec3" class="btn btn-primary">Re-aparecer Frase</button>
+                <br><br>
+
+            </div>
+        </section>
+<!-- FIN SELECTORES JQUERY -->
+        <hr class="m-0" />        
         <!-- Eventos MARCO -->
         <section class="resume-section" id="events">
             <div class="resume-section-content">
@@ -687,6 +859,7 @@
         </section>
 
     </div>
+    
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
