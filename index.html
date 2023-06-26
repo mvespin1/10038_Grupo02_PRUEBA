@@ -20,6 +20,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/funciones.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/stylesfunciones.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/dark.min.css">
+    <link rel="stylesheet" href="../assets/plugins/simplelightbox/simple-lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
 
 </head>
 
@@ -168,7 +174,7 @@
 
                         </p>
                         <div class="docs-code-block">
-                            <pre class="shadow-lg rounded">
+                            <pre class="shadow-lg rounded" >
                                 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
                                 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="jquery-3.6.4.min.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
                                 <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
@@ -190,6 +196,7 @@
                             proporcionados por estos CDNs para
                             cargar los archivos de jQuery en tu sitio web.
                         </p>
+            
                         <div class="docs-code-block">
                             <pre class="shadow-lg rounded">
                                 <ol>
@@ -287,7 +294,7 @@
                             <h3>Ejemplo:</h3>
                             <div class="subheading mb-3">Cambio de tema de color dinámico:</div>
                             <div class="docs-code-block">
-                                <pre class="shadow-lg rounded"><code class="json hljs">
+                                <pre class="shadow-lg rounded"><code class="javascript hljs">
                                     $(document).ready(function() {
                                     var changeColor = true;
                                     var defaultColor = $('body').css('background-color');
