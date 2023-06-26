@@ -274,12 +274,13 @@
                             Los métodos de jQuery en nuestros ejemplos están dentro de un evento de documento listo:
                         </p>
                         <div class="docs-code-block">
-                            <pre class="shadow-lg rounded">
-                                $(document).<span class="jspropertycolor" style="color:black">ready</span>(<span class="jskeywordcolor" style="color:mediumblue">function</span>(){<span class="jsnumbercolor" style="color:red">
-                                </span>&nbsp; <i>
-                                <span class="commentcolor" style="color:green">// jQuery methods go here...</span></i><br><span class="jsnumbercolor" style="color:red">
-                                </span>});
-                            </pre>
+                            <pre class="shadow-lg rounded"><code class="javascript hljs">
+                                $(document).ready(function(){
+                                  
+                                    // jQuery methods go here...
+    
+                                });
+                            </code></pre>
                         </div>
                         <p>
                             Estos son algunos ejemplos de acciones que pueden fallar si los métodos se ejecutan antes de
